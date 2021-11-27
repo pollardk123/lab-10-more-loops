@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>whichfloor</title>
+  </head>
+  <body>
+    <script>
+      window.onload = function(){
+        var Floors = 20;
+        var userInput;
+        do{
+          userInput = prompt("Which floor do you work on");
+          if(parseInt(userInput) > Floors){
+            console.log("You entered" + userInput + "but we only have" + Floors);
+          }
+        }while(parseInt(userInput)> Floors);
+        console.log("Congradulations you work on" + userInput + "Floor")
+      }
+
+    </script>
+
+  </body>
+</html>

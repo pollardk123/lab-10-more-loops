@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>gimmymynumber</title>
+  </head>
+  <body>
+    <script>
+      window.onload = function(){
+          var userinput;
+          var text = 'Give me a number greater than 100';
+          do{
+            userinput = prompt(text);
+            text = 'This (userinput) is less than 100..Give another number';
+          } while(userinput<100);
+            console.log("Congradulations" + userinput + "is good!")
+          }
+
+    </script>
+
+  </body>
+</html>
